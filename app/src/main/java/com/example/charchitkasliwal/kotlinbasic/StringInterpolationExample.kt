@@ -21,7 +21,7 @@ class StringInterpolationExample : AppCompatActivity() {
      */
     fun stringInterpolation() : String{
          var a : String = "Hello"
-         println("String concatination Output is Here" + a) // String Concatination
+         println("String concatination Output is Here $a") // String Concatination
          println("String Interpolation Output is Here $a")
         return a
     }

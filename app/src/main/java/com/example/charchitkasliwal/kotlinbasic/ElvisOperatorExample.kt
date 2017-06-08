@@ -2,14 +2,25 @@ package com.example.charchitkasliwal.kotlinbasic
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
-class ElvisOperatorExample : AppCompatActivity() {
+class ElvisOperatorExample : AppCompatActivity(), View.OnClickListener {
+    override fun onClick(v: View?) {
+        when(v){
+            v -> println("On click 1")
+
+        }
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_elvis_operator)
         elvisOperator("")
     }
+
+
+
 
     private fun elvisOperator(b : String) {
         if (b != null && b.length > 0) {

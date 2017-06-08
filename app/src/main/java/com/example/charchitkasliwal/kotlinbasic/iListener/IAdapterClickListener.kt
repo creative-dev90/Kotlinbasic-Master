@@ -7,4 +7,10 @@ interface IAdapterClickListener {
 
      fun onCellItemClick(mesg : String): Unit
 
+     fun onCellItemClick1(mesg : String): Unit{
+          println("Hello")
+     }
+
+
+
 }

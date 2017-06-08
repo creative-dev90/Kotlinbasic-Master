@@ -10,15 +10,25 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.example.charchitkasliwal.kotlinbasic.iListener.IAdapterClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener,IAdapterClickListener {
+    override fun onCellItemClick(mesg: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onCellItemClick1(mesg: String) {
+        super.onCellItemClick1(mesg)
+        println("In main Activity")
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val toolbar = findViewById(R.id.toolbar) as Toolbar
+        val toolbar = findViewById(R.id.toolbar)
+                as Toolbar
         setSupportActionBar(toolbar)
         button.findViewById(R.id.button) as Button
         button.setOnClickListener(this@MainActivity)
@@ -27,11 +37,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         lazy_operator.setOnClickListener(this@MainActivity)
     }
 
+
     override fun onClick(v: View?) {
         // On Click Switching to New Activity
         when(v){
             button ->  {
-                // Start New Activity
                 val intent =  StringInterpolationExample.newMainIntent(this@MainActivity,"9584060485")
                 intent?.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                 startActivity(intent)
@@ -44,7 +54,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
+
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
