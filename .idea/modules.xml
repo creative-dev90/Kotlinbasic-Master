@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kotlinbasic-Master.iml" filepath="$PROJECT_DIR$/Kotlinbasic-Master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/workspace_kotlin_practice.iml" filepath="$PROJECT_DIR$/workspace_kotlin_practice.iml" />
+      <module fileurl="file://E:\Android\workspace_kotlin\Kotlinbasic-Master\app\app.iml" filepath="E:\Android\workspace_kotlin\Kotlinbasic-Master\app\app.iml" />
+      <module fileurl="file://E:\Android\workspace_kotlin\Kotlinbasic-Master\workspace_kotlin_practice.iml" filepath="E:\Android\workspace_kotlin\Kotlinbasic-Master\workspace_kotlin_practice.iml" />
     </modules>
   </component>
 </project>
