@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".StringInterpolationExample" />
-        <activity android:name=".LazyDelegationPropertyExample"></activity>
+        <activity android:name=".LazyDelegationPropertyExample" />
+        <activity android:name=".ElvisOperatorExample"></activity>
     </application>
 
 </manifest>
